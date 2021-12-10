@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +23,7 @@ namespace Best20HackerNews.Controllers
 
         /// <summary>
         /// Get best 20 hacker news stories
-        /// </summary>
+        /// </summary> 
         public StoryController(ILogger<StoryController> logger)
         {
             _logger = logger;
@@ -71,7 +70,7 @@ namespace Best20HackerNews.Controllers
                 return GetBest20StoriesId();
             });
             bestStoriesIds = await getBest20StoriesIds;
-            foreach(var id in bestStoriesIds)
+            foreach (var id in bestStoriesIds)
             {
                 taskStories.Add(Task.Run(() =>
                 {
