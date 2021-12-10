@@ -1,0 +1,7 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Best20HackerNews/v17
+/Best20HackerNews/bin/Debug/netcoreapp3.1
+/Best20HackerNews/obj
