@@ -25,7 +25,6 @@ namespace Best20HackerNews.Controllers
         /// <summary>
         /// Get best 20 hacker news stories
         /// </summary>
-        /// <returns></returns>
         public StoryController(ILogger<StoryController> logger)
         {
             _logger = logger;
